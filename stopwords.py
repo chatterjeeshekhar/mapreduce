@@ -15,8 +15,10 @@ for r in words:
     r = re.sub(r'\W+', '', r)
     r = r.lower()
     r = r.replace("_", "", 100)
+    if r.isdigit():
+    	continue
     if not r in stop_words: 
         appendFile = open('bookfilter.txt','a')
         appendFile.write(" "+r)
-        appendFile.close() 
+        x	appendFile.close() 
 print("Task Complete")
