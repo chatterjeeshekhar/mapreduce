@@ -20,5 +20,5 @@ for r in words:
     if not r in stop_words: 
         appendFile = open('bookfilter.txt','a')
         appendFile.write(" "+r)
-        x	appendFile.close() 
+        appendFile.close() 
 print("Task Complete")
